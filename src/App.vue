@@ -63,7 +63,7 @@
         >
         <v-col cols="1"
           ><v-btn color="white" elevation="1" rounded
-            ><div style="color:#858585">บันทึกไว้</div></v-btn
+            ><div style="color:#858585">ชื่นชอบ</div></v-btn
           ></v-col
         >
         <v-col cols="4"></v-col>
