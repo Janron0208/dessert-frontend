@@ -4,48 +4,75 @@ const state = {
     menus: [{
             id: 1,
             src: require("../assets/images/img1.jpg"),
-            love: false
+            love: false,
+            foodname: "สปาเกตตี้",
+            username: "Nattaphon Janron"
+
         },
         {
             id: 2,
             src: require("../assets/images/img2.jpg", ),
-            love: false
+            love: false,
+            foodname: "สปาเกตตี้",
+            username: "Nattaphon Janron"
+
         },
 
         {
             id: 3,
             src: require("../assets/images/img3.jpg", ),
-            love: false
+            love: false,
+            foodname: "สปาเกตตี้",
+            username: "Nattaphon Janron"
+
         },
         {
             id: 4,
             src: require("../assets/images/img4.jpg", ),
-            love: false
+            love: false,
+            foodname: "สปาเกตตี้",
+            username: "Nattaphon Janron"
+
         },
         {
             id: 5,
             src: require("../assets/images/img5.jpg", ),
-            love: false
+            love: false,
+            foodname: "สปาเกตตี้",
+            username: "Nattaphon Janron"
+
         },
         {
             id: 6,
             src: require("../assets/images/img6.jpg", ),
-            love: false
+            love: false,
+            foodname: "สปาเกตตี้",
+            username: "Nattaphon Janron"
+
         },
         {
             id: 7,
             src: require("../assets/images/img7.jpg", ),
-            love: false
+            love: false,
+            foodname: "สปาเกตตี้",
+            username: "Nattaphon Janron"
+
         },
         {
             id: 8,
             src: require("../assets/images/img8.jpg", ),
-            love: false
+            love: false,
+            foodname: "สปาเกตตี้",
+            username: "Nattaphon Janron"
+
         },
         {
             id: 9,
             src: require("../assets/images/img9.jpg", ),
-            love: false
+            love: false,
+            foodname: "สปาเกตตี้",
+            username: "Nattaphon Janron"
+
         },
 
     ],
