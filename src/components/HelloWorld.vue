@@ -1,11 +1,9 @@
 <template>
-  <div class="block galleryBlock">
     <v-container>
-      <div class="gallery">
+      <!-- <div class="gallery">
         <v-row>
           <v-col
-            v-for="item in items"
-            :key="item.id"
+             v-for="(item, index) in menus" :key="index"
             class="d-flex child-flex"
             cols="4"
           >
@@ -21,9 +19,8 @@
             </v-img>
           </v-col>
         </v-row>
-      </div>
+      </div> -->
     </v-container>
-  </div>
 </template>
 
 <script>
