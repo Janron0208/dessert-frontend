@@ -1,78 +1,48 @@
 <template>
-    <v-container>
-      <!-- <div class="gallery">
-        <v-row>
-          <v-col
-             v-for="(item, index) in menus" :key="index"
-            class="d-flex child-flex"
-            cols="4"
-          >
-            <v-img :src="item.src" aspect-ratio="1" class="grey lighten-2">
-              <template v-slot:placeholder>
-                <v-row class="fill-height ma-0" align="center" justify="center">
-                  <v-progress-circular
-                    indeterminate
-                    color="grey lighten-5"
-                  ></v-progress-circular>
-                </v-row>
-              </template>
-            </v-img>
-          </v-col>
-        </v-row>
-      </div> -->
-    </v-container>
+  <v-container>
+    <div class="gallery">
+      <v-row>
+        <v-col
+          v-for="(item, menus) in this.$store.state.menus"
+          :key="menus.id"
+          class="d-flex child-flex"
+          cols="4"
+        >
+          <v-img :src="item.src" aspect-ratio="1" class="grey lighten-2">
+            <template v-slot:placeholder>
+              <v-row class="fill-height ma-0" align="center" justify="center">
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                ></v-progress-circular>
+              </v-row>
+            </template>
+          </v-img>
+        </v-col>
+      </v-row>
+    </div>
+  </v-container>
 </template>
 
 <script>
 export default {
   name: "Gallery",
-
+  computed: {
+    menus() {
+      return this.$store.getters.menus;
+    },
+  },
   data: () => ({
-    items: [
-      {
-        id: 1,
-        src: require("../assets/images/img1.jpg"),
-      },
-      {
-        id: 2,
-        src: require("../assets/images/img2.jpg"),
-      },
-      {
-        id: 3,
-        src: require("../assets/images/img3.jpg"),
-      },
-      {
-        id: 4,
-        src: require("../assets/images/img4.jpg"),
-      },
-      {
-        id: 5,
-        src: require("../assets/images/img5.jpg"),
-      },
-      {
-        id: 6,
-        src: require("../assets/images/img6.jpg"),
-      },
-      {
-        id: 7,
-        src: require("../assets/images/img7.jpg"),
-      },
-      {
-        id: 8,
-        src: require("../assets/images/img8.jpg"),
-      },
-      {
-        id: 9,
-        src: require("../assets/images/img9.jpg"),
-      },
-    ],
+    items: [],
   }),
+  mounted() {
+    console.log(this.$store.state.menus[0]);
+  },
 };
 </script>
 <style scoped>
 .gallery {
   padding-left: 160px;
   padding-right: 160px;
-
 }
 </style>
