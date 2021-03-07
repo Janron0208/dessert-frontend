@@ -1,8 +1,6 @@
 <template>
   <v-app>
-    <v-col>
-      <v-col>
-        <v-app-bar app color="white" elevation="2" hide-on-scroll="up | down">
+        <v-app-bar app color="white" elevation="4" hide-on-scroll="up | down">
           <v-row class="menulist">
             <v-col cols="2" style="text-align:right"
               ><img
@@ -40,12 +38,11 @@
             </v-col>
 
             <v-col cols="1" style="text-align:left"
-              ><v-icon style="color:#FFB4B4;">mdi-bell-ring</v-icon></v-col
-            >
+              ><v-icon style="color:#FFB4B4;">mdi-bell-ring</v-icon></v-col>
+              
           </v-row>
         </v-app-bar>
-      </v-col>
-    </v-col>
+    
     <div class="dropdown">
       <v-row>
         <v-col cols="4"></v-col>
@@ -72,6 +69,7 @@
         <v-col cols="4"></v-col>
       </v-row>
     </div>
+
     <v-col class="bg">
       <v-main>
         <HelloWorld />
@@ -138,13 +136,10 @@ export default {
   height: 35px;
 }
 .dropdown {
-  height: 65px;
-  padding-top: 25px;
+
+  padding-top: 80px;
   background-color: #fff5f5;
 }
-div.col {
-  background-color: none;
-}
-.btn-plus {
-}
+
+
 </style>
