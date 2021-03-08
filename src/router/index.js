@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Profile from '../views/Profile.vue'
+import Showmenu from '../views/Showmenu.vue'
 
 Vue.use(VueRouter)
 
@@ -14,6 +15,12 @@ const routes = [{
         path: '/profile',
         name: 'Profile',
         component: Profile
+
+    },
+    {
+        path: '/showmenu',
+        name: 'Showmenu',
+        component: Showmenu
 
     }
 ]

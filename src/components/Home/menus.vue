@@ -9,7 +9,7 @@
           cols="4"
         >
           <v-hover v-slot="{ hover }">
-            <v-card elevation="5" tile :to="'/order/' + index" @click="dialog=true">
+            <v-card elevation="5" to="/showmenu">
               <v-img :src="item.src" aspect-ratio="1" class="grey lighten-2">
                 <v-expand-transition>
                   <div
@@ -39,7 +39,7 @@
             </v-card>
           </v-hover>
         </v-col>
-        
+
       </v-row>
       
     </div>
@@ -50,12 +50,11 @@
 </template>
 
 <script>
-import Showmenu from '@/components/Showmenu/showmenu.vue';
 
 export default {
   name: "Menus",
   component: {
-    Showmenu
+   
     },
   computed: {
     menus() {
