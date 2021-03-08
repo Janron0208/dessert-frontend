@@ -1,17 +1,24 @@
 <template>
+    
   <div class="home">
-    <HelloWorld/>
+    <Menubar />
+    <Menus />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Menus from '@/components/Home/menus.vue'
+import Menubar from "@/components/Home/menubar";
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    Menus,
+    Menubar
+
   }
 }
 </script>
+<style scoped>
+
+</style>
