@@ -9,7 +9,7 @@
           cols="4"
         >
           <v-hover v-slot="{ hover }">
-            <v-card elevation="5" to="/showmenu">
+            <v-card elevation="5" :to="`/showmenu/th/`+menus+item.foodname+item.username">
               <v-img :src="item.src" aspect-ratio="1" class="grey lighten-2">
                 <v-expand-transition>
                   <div
@@ -39,23 +39,15 @@
             </v-card>
           </v-hover>
         </v-col>
-
       </v-row>
-      
     </div>
   </v-container>
-
-
-  
 </template>
 
 <script>
-
 export default {
   name: "Menus",
-  component: {
-   
-    },
+  component: {},
   computed: {
     menus() {
       return this.$store.getters.menus;
@@ -65,6 +57,9 @@ export default {
     items: [],
     dialog: false,
   }),
+  mounted() {
+    console.log(this.$store.state.menus);
+  },
 };
 </script>
 <style scoped>

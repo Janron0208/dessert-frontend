@@ -1,8 +1,9 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Profile from '../views/Profile.vue'
-import Showmenu from '../views/Showmenu.vue'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+
+import Home from '../views/Home.vue';
+import Profile from '../views/Profile.vue';
+import Showmenu from '../views/Showmenu.vue';
 
 Vue.use(VueRouter)
 
@@ -18,7 +19,7 @@ const routes = [{
 
     },
     {
-        path: '/showmenu',
+        path: '/showmenu/th/:id:foodname:username',
         name: 'Showmenu',
         component: Showmenu
 

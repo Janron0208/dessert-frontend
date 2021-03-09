@@ -40,9 +40,11 @@
     </v-app-bar>
     <v-col class="bg">
       <div class="content">
-        <v-main>
-          <Home />
-        </v-main>
+        <main>
+          <v-content>
+            <router-view></router-view>
+          </v-content>
+        </main>
       </div>
     </v-col>
     <Btnadd />
@@ -50,14 +52,12 @@
 </template>
 
 <script>
-import Home from "./views/Home";
 import Btnadd from "./components/Home/btn-add";
 
 export default {
   name: "App",
 
   components: {
-    Home,
     Btnadd,
   },
 };
@@ -93,5 +93,4 @@ export default {
   width: 80%;
   height: 35px;
 }
-
 </style>
