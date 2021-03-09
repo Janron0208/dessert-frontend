@@ -12,7 +12,7 @@
           fixed
           right
           bottom
-           @click="dialog = true"
+          @click="dialog = true"
         >
           <v-icon>mdi-plus</v-icon>
         </v-btn>
@@ -20,9 +20,22 @@
 
       <v-card>
         <v-card-title>
-          <span class="headline">User Profile</span>
+          <div>เพิ่มเมนูกันเลยจ้า</div>
         </v-card-title>
-
+        <v-container>
+          <v-col>
+            <v-col>
+              <div class="addnamemenu">
+                <input type="text" placeholder="ขื่อเมนู" />
+              </div>
+            </v-col>
+          </v-col>
+          <v-col>
+            <div class="adddesmenu">
+              <input type="text" placeholder="รายละเอียด" />
+            </div>
+          </v-col>
+        </v-container>
         <v-card-text>
           <v-container>
             <div v-if="!image">
@@ -38,7 +51,7 @@
           <v-btn color="blue darken-1" text @click="dialog = false">
             Close
           </v-btn>
-          <v-btn color="blue darken-1" text @click="dialog = false">
+          <v-btn color="blue darken-1" text to="/" @click="dialog = false">
             Save
           </v-btn>
         </v-card-actions>
@@ -52,7 +65,7 @@ export default {
   data: () => ({
     dialog: false,
   }),
-    methods: {
+  methods: {
     onFileChange: function(e) {
       var files = e.target.files;
       if (!files.length) return;

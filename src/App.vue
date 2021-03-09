@@ -11,7 +11,7 @@
           ><div>Yongmaru</div></v-col
         >
         <v-col cols="4" style="text-align:center;color:#FFB4B4;font-size:30px;"
-          ><div>DragonSlayer</div></v-col
+          ><div>Sweet:D</div></v-col
         >
         <v-col cols="3">
           <div class="search">

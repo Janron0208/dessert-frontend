@@ -35,8 +35,6 @@ export default {
 
 <style scoped>
 .menubar {
-  padding-top: 10px;
-  padding-bottom: 30px;
   background-color: #fff5f5;
 }
 </style>

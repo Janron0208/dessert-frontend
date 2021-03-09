@@ -79,8 +79,8 @@ export default {
   text-align: center;
   font-size: 15px;
 }
-.content {
+/* .content {
   padding-left: 100px;
   padding-right: 100px;
-}
+} */
 </style>
